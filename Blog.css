@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+body {
+  font-family: 'Comfortaa', cursive;
+  text-align: left;
+  margin: 0;
+  background-color: rgb(196, 196, 196);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+top-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 80px;
+  height: 5%;
+  margin: auto;
+  width: 65%;
+  background-color: rgb(20, 94, 163);
+  border-top: 0px;
+  /* border: 1px solid red; */
+}
+
+.contacts {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.social img {
+  width: 40%;
+  margin: auto;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  outline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1% 0;
+  height: 100%;
+  width: 65%;
+  /* border: 1px solid red; */
+}
+
+.flex {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  padding: 5% 0;
+  /* border: 1px solid red; */
+}
+
+nav {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-top: 3%;
+  border-bottom: 2px solid lightgray;
+}
+
+#nav {
+  padding: 0;
+  height: 20px;
+  display: inline-block;
+  list-style: none;
+}
+
+.nav {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+  /* border: 1px solid red; */
+}
+
+.content {
+  width: 80%;
+  max-width: 80%;
+}
+
+h3 {
+  margin-top: 7%;
+}
+
+.bordered {
+  border-top: 2px solid lightgray;
+}
+
+ol, ul {
+  padding-left: 2%;
+}
+
+strong {
+  color: rgb(110, 110, 110);
+}
+
+footer {
+  position: static;
+  vertical-align: middle;
+  padding: 2% 0;
+  text-align: center;
+  min-height: 4%;
+  height: 4%;
+  width: 65%;
+  margin: 0 auto;
+  color: lightgray;
+  background: rgb(31, 31, 31);
+}
+
+.info {
+  vertical-align: middle;
+  font-size: 1.2em;
+  vertical-align: middle;
+  /* border: 1px solid red; */
+  margin-right: 1%;
+}
+
+.number {
+  font-size: 2em;
+  /* border: 1px solid red; */
+}
+
+.info div {
+  display: inline-block;
+  border-left: 2px solid lightgray;
+  padding: 0 0.5%;
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    padding: 0;
+  }
+  top-header, main, footer {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .contacts {
+    width: 40%;
+  }
+  .social img {
+    width: 70%;
+  }
+  .info div {
+    border: none;
+  }
+  .flex {
+    width: 100%;
+  }
+  nav {
+    margin-top: 8%;
+    font-size: 0.8em;
+  }
+  .content {
+    width: 90%;
+    max-width: 90%;
+  }
+}

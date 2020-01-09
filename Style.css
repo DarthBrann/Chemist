@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+body {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(196, 196, 196);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+top-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 80px;
+  height: 5%;
+  margin: auto;
+  width: 65%;
+  background-color: rgb(20, 94, 163);
+  border-top: 0px;
+  /* border: 1px solid red; */
+}
+
+.contacts {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.social img {
+  width: 40%;
+  margin: auto;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  outline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1% 0;
+  height: 100%;
+  width: 65%;
+  /* border: 1px solid red; */
+}
+
+.flex {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 60%;
+  padding: 2% 0;
+  /* border: 1px solid red; */
+}
+
+nav {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  margin-top: 2%;
+  border-bottom: 2px solid lightgray;
+}
+
+ul {
+  height: 20px;
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+
+strong {
+  color: rgb(110, 110, 110);
+}
+
+h1 {
+  margin: auto 15%;
+  font-size: 1.7em;
+}
+
+.logo img {
+  margin: 3% auto;
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.bordered {
+  border-top: 2px solid lightgray;
+}
+
+.number {
+  justify-content: center;
+  color: rgb(20, 94, 163);
+}
+
+#number {
+  width: 60%;
+}
+
+.tel {
+  visibility: hidden;
+  width: 17%;
+}
+
+.number a img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.box {
+  width: 17%;
+}
+
+.where, .what {
+  text-align: center;
+}
+
+.where {
+  font-size: 1.5em;
+}
+
+.what {
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.discription {
+  font-size: 1.2em;
+  margin: 1% auto;
+  flex-wrap: wrap;
+}
+
+.galery {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  max-height: 100%;
+  padding: auto 10%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.galery div {
+  object-fit: contain;
+  margin: 2% 1%;
+  height: auto;
+  max-width: 30%;
+  border: 3% solid lightgray;
+}
+
+.galery div img {
+  max-width: 80%;
+}
+
+footer {
+  position: static;
+  vertical-align: middle;
+  padding: 2% 0;
+  text-align: center;
+  min-height: 4%;
+  height: 4%;
+  width: 65%;
+  margin: 0 auto;
+  color: lightgray;
+  background: rgb(31, 31, 31);
+}
+
+.info {
+  vertical-align: middle;
+  font-size: 1.2em;
+  vertical-align: middle;
+  /* border: 1px solid red; */
+  margin-right: 1%;
+}
+
+.number {
+  font-size: 2em;
+  /* border: 1px solid red; */
+}
+
+.info div {
+  display: inline-block;
+  border-left: 2px solid lightgray;
+  padding: 0 0.5%;
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    padding: 0;
+  }
+  .logo {
+    margin-top: 5%;
+  }
+  top-header, main, footer {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .contacts {
+    width: 40%;
+  }
+  .social img {
+    width: 70%;
+  }
+  .info div {
+    border: none;
+  }
+  .tel {
+    visibility: visible;
+  }
+  #number {
+    font-size: 0.6em;
+  }
+  .spec h1 {
+    font-size: 1.3em;
+    width: 92%;
+  }
+  .where {
+    font-size: 1em;
+  }
+  .what {
+    width: 92%;
+    font-size: 1em;
+  }
+  .discription {
+    max-width: 92%;
+    font-size: 1em;
+  }
+  .discription div {
+    text-align: left;
+  }
+  .flex {
+    width: 100%;
+  }
+  nav {
+    margin-top: 8%;
+    font-size: 0.8em;
+  }
+}
